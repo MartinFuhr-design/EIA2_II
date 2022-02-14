@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <script src="Moveable.js"></script>
+    <script src="SuperBox.js"></script>
+    <script src="Vector.js"></script>   
+    <script src="customer.js"></script>
+    <script src="otherWorker.js"></script> 
+    <script src="field.js"></script>
+    
+    <title>Doener</title>
+</head>
+<body>
+    <form action="doener.html" method="post">
+        <div class="form">
+            <br>
+        <h1>Döner - Simulator</h1>
+        <br>
+        <h2><em> Hallo Bitteschön </em></h2>
+        <br>
+        <div class="input">
+        Anzahl Mitarbeitern
+        <input type="number" name="Number" placeholder="1" min="1" max="5" step="1" value="1">
+        <hr/>
+        Anzahl Kunden pro Minute
+        <input type="number" name="Number1" placeholder="1" min="1" max="5" step="1" value="1">
+        <hr/>
+        Empfindlichkeit Mitarbeiter 
+		<input type="range" name="Slider" min="0" max="10" step="1"/>
+		<hr />
+        Kapazität Behälter
+		<input type="range" name="Slider3" min="30" max="70" step="5"/>
+		<hr />
+        Anzahl der Bestellung der Produkte
+		<input type="text" name="Text" placeholder="type here" min="5" max="20" step="5" value="5"/>
+        </div>
+        <button class="start">Start</button>
+        </div>
+    </form>
+    <div class="canvasDiv visible">
+        <canvas>
+           
+        </canvas> 
+   <div id="waitingTime"></div>
+   <div id="happiness">Happiness:
+    <div class="chartWrapper">
+        <div class="chart"></div>
+      </div>
+   </div>
+   <br>
+   <div id="foodNumber">Food:
+      </div>
+      <div id="doenerToEat"></div>
+   </div>
+</div>
+    
+</body>
+</html>
