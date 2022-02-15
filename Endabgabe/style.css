@@ -1,0 +1,108 @@
+body, html {
+    font-family: sans-serif;   
+    background-color: #000000;
+} 
+
+.input {
+    margin: 0 auto;
+    background-color: #000000;
+    height: 276px;
+    width: 500px;
+    color: #ffffff;
+}
+
+.form {
+    margin: 0 auto;
+    text-align: center;
+    height: 553px;
+    width: 1000px;
+    color: #ffffff;
+}
+
+.start {
+    background-color: #000000;
+    color: #ffffff;
+    height: 25px;
+}
+
+.visible {
+    display: none;
+}
+
+#happiness, #foodNumber {
+    color: #ffffff;
+}
+
+/*Chart*/
+.chartWrapper {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 15px;
+    background: rgba(226, 17, 17, 0.5);
+    border-radius: 10px;
+    
+    z-index: 2;
+}
+
+.chartWrapper .chart {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    background: rgb(21, 27, 204);
+    opacity: 0.6;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+.butt {
+    position: absolute;
+    bottom: 330px;
+    right: 200px;
+    background-color: #ffffff;
+    color: #000000;
+    height: 25px;
+    width: 100px;
+}
+
+
+
+.progress{
+    position: absolute;
+    margin-left: 80%;
+    top: 50px;
+    height: 10px;
+    width: 100px;
+    border: 5px solid #3f68ee;
+    border-radius: 15px;
+    
+}
+.progress .color{
+    position: absolute;
+    background-color: #fcec15;
+    width: 0px;
+    height: 10px;
+    border-radius: 15px;
+    animation: progress 5s infinite linear;    
+}
+@keyframes progress {
+    0%{
+      width: 0%;
+    }
+    25%{
+        width: 25%;
+    }
+    50%{
+        width: 75%;
+    }
+    75%{
+        width: 85%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+
+
+
